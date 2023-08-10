@@ -1,6 +1,6 @@
 return require("packer").startup(function(use)
+	use "windwp/nvim-autopairs"
 	use "wbthomason/packer.nvim"
-	use "jiangmiao/auto-pairs"
 	use "williamboman/mason.nvim"
 	use "williamboman/mason-lspconfig.nvim"
 	use "neovim/nvim-lspconfig"
@@ -10,6 +10,7 @@ return require("packer").startup(function(use)
 	use "tikhomirov/vim-glsl"
 	use "ray-x/lsp_signature.nvim"
 	use "nvim-lualine/lualine.nvim"
+	use "MaxMEllon/vim-jsx-pretty"
 
 	use "nvim-lua/plenary.nvim"
 	use "nvim-telescope/telescope.nvim"

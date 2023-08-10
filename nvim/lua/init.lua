@@ -1,5 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup()
+require("nvim-autopairs").setup()
 
 require("lualine").setup {
 	options = {
@@ -18,8 +19,8 @@ require("lsp_signature").setup {
 
 local lspconfig = require("lspconfig")
 lspconfig.ccls.setup {}
-lspconfig.tsserver.setup {}
 lspconfig.csharp_ls.setup {}
+lspconfig.tsserver.setup {}
 
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
