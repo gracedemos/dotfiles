@@ -21,6 +21,7 @@ local lspconfig = require("lspconfig")
 lspconfig.ccls.setup {}
 lspconfig.csharp_ls.setup {}
 lspconfig.tsserver.setup {}
+lspconfig.gopls.setup {}
 
 lspconfig.hls.setup {
 	filetypes = { "haskell", "lhaskell", "cabal" }
